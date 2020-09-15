@@ -18,13 +18,9 @@ sudo apt-get install hdparm
 List Disks 
 sudo fdisk -l
 
-sudo vim /etc/hdparm.conf
-command_line {
-    hdparm -B 127 -S 120 /dev/sda
-}
-command_line {
-    hdparm -B 127 -S 120 /dev/sdb
-}
+sudo vi /etc/rc.local
+hdparm -B 120 -S 60 /dev/sda
+hdparm -B 120 -S 60 /dev/sdb and so on...
 
 
 Installing SAMBA
