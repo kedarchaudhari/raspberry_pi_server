@@ -10,6 +10,23 @@ UUID=409A-F4AF /home/pi/shares/nas_music auto defaults,nofail,nobootwait 0 0
 UUID=8CAB-602F /home/pi/shares/nas_entertainment auto defaults,nofail,nobootwait 0 0
 UUID=8041-E1DE /home/pi/shares/nas_downloads auto defaults,nofail,nobootwait 0 0
 
+Set the Hard Disks to Spin Down
+http://www.howtoeverything.net/linux/hardware/permanently-configure-hard-drives-spin-down-after-given-idle-time
+
+sudo apt-get install hdparm
+
+List Disks 
+sudo fdisk -l
+
+sudo vim /etc/hdparm.conf
+command_line {
+    hdparm -B 127 -S 120 /dev/sda
+}
+command_line {
+    hdparm -B 127 -S 120 /dev/sdb
+}
+
+
 Installing SAMBA
 sudo apt-get update
 sudo apt-get upgrade
