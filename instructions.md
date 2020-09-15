@@ -83,3 +83,18 @@ Sharing printer using SAMBA
    browseable = yes
    read only = yes
    guest ok = yes
+
+Installing Plex Media Server 
+https://pimylifeup.com/raspberry-pi-plex-server/
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install apt-transport-https
+
+curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
+echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+sudo apt-get update
+sudo apt install plexmediaserver
+
+Accessing Plex Media Server
+<rpi_IP>:32400/web/
