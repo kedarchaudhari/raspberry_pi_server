@@ -1,4 +1,0 @@
-UUID=E628473A2847094F /home/pi/shares/nas_essentials auto defaults,nofail,nobootwait 0 0
-UUID=409A-F4AF /home/pi/shares/nas_music auto defaults,nofail,nobootwait 0 0
-UUID=8CAB-602F /home/pi/shares/nas_entertainment auto defaults,nofail,nobootwait 0 0
-UUID=8041-E1DE /home/pi/shares/nas_downloads auto defaults,nofail,nobootwait 0 0
